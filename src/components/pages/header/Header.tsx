@@ -1,26 +1,42 @@
-import { AiOutlinePicture } from "react-icons/ai";
+// import { AiOutlinePicture } from "react-icons/ai";
 
 export default function Header() {
+    const handleSendFooter = () => {
+        window.scrollTo({
+            top: 9999,
+            left: 0,
+            behavior: "smooth",
+        });
+    };
+
     return (
-        <header className="header flex gap-5">
-            <div className="grid justify-items-start content-between gap-5 w-1/2 p-10 bg-white dark:bg-dark-mode-black rounded-3xl transition">
-                <div className="grid content-start gap-4">
-                    <h1 className="text-5xl dark:text-white transition">
+        <header className="header grid md:flex gap-5">
+            <div className="grid justify-items-start content-between gap-5 md:w-1/2 h-80 md:h-96 p-5 md:p-8 lg:p-10 bg-white dark:bg-dark-mode-black rounded-3xl transition">
+                <div className="grid content-start gap-2 md:gap-4">
+                    <h1 className="text-3xl md:text-4xl dark:text-white transition">
                         Super fast and <br /> secure gaming server
                     </h1>
-                    <p className="text-gray-500 dark:text-dark-mode-gray transition">
+                    <p className="text-xs lg:text-base text-gray-500 dark:text-dark-mode-gray transition">
                         Experience unparalleled speed and top-notch security
                         with our state-of-the-art gaming server. Designed for
                         gamers who demand the best, our server ensures smooth
                         gameplay and robust protection against threats.
                     </p>
                 </div>
-                <button className="me-2 mb-2 px-5 py-2.5 text-sm text-white font-medium bg-gray-800 hover:bg-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-lg dark:focus:ring-gray-700 transition">
+                <button
+                    className="px-4 py-2 md:px-5 md:py-2.5 text-sm text-white font-medium bg-gray-800 hover:bg-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-lg dark:focus:ring-gray-700 transition"
+                    onClick={handleSendFooter}
+                >
                     Open an Account
                 </button>
             </div>
-            <div className="grid place-items-center w-1/2 bg-gray-400 rounded-3xl">
-                <AiOutlinePicture className="text-6xl text-white dark:text-black transition" />
+            <div className="grid place-items-center md:w-1/2 h-80 md:h-96 bg-gray-400 rounded-3xl">
+                {/* <AiOutlinePicture className="text-6xl text-white dark:text-black transition" /> */}
+                <img
+                    src="https://cdn.discordapp.com/attachments/1220438796026384464/1322649083805958205/servers.jpg?ex=6771a473&is=677052f3&hm=ba31575de7743662bebfb126d707fa026f5e1eaf6c5d1dca973cb8af781c5d79&"
+                    alt="hosting"
+                    className="object-fill w-full h-80 md:h-96 rounded-3xl"
+                />
             </div>
         </header>
     );

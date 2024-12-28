@@ -1,19 +1,43 @@
-import { useEffect, useState } from "react";
-import { FaMoon } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+import { FaMoon, FaBars, FaTimes } from "react-icons/fa";
 import { IoSunny } from "react-icons/io5";
+import useClickOutside from "../../../hooks/UseClickOutside";
 
 const initialNavbarOptions = [
-    "Strona Główna",
-    "Speedtest",
-    "Aplikacje",
-    "Status",
-    "Hosting",
-    "Discord",
-    "Sloudclient",
+    {
+        title: "Strona Główna",
+        url: "",
+    },
+    {
+        title: "Aplikacje",
+        url: "",
+    },
+    {
+        title: "Status",
+        url: "",
+    },
+    {
+        title: "Hosting",
+        url: "",
+    },
+    {
+        title: "Discord",
+        url: "",
+    },
+    {
+        title: "SloudClient",
+        url: "",
+    },
 ];
 
 export default function Navbar() {
     const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const refContainerMenu = useRef(null);
+
+    useClickOutside(refContainerMenu, () => {
+        setIsMenuOpen(false);
+    });
 
     useEffect(() => {
         if (isDarkMode) {
@@ -27,27 +51,56 @@ export default function Navbar() {
         setIsDarkMode(!isDarkMode);
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
-        <nav className="navbar sticky top-0 left-0 right-0 flex items-center px-10 py-5 bg-white dark:bg-dark-mode-black transition">
-            <h3 className="text-3xl dark:text-white transition">SloudPL</h3>
-            <ul className="flex justify-center items-center gap-3 w-full">
+        <nav className="navbar sticky top-0 left-0 right-0 flex items-center justify-between px-5 sm:px-10 lg:px-24 py-3 md:py-4 bg-white dark:bg-dark-mode-black border-b dark:border-dark-mode-gray transition z-50">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold dark:text-white transition">
+                SloudPL
+            </h3>
+            <ul className="hidden md:flex justify-center items-center gap-1 lg:gap-4 w-full">
                 {initialNavbarOptions.map((option, i) => (
                     <li
                         key={i}
-                        className="px-3 py-1 text-lg dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 rounded-md cursor-pointer transition"
+                        className="px-2 py-1 lg:px-3 lg:py-2 text-xs lg:text-base xl:text-lg dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 rounded-md cursor-pointer transition"
                     >
-                        {option}
+                        <a href={option.url}>{option.title}</a>
                     </li>
                 ))}
             </ul>
-            <div className="flex items-center">
+            <div className="flex items-center gap-2 md:gap-3">
                 <button
-                    className="text-2xl dark:text-white transition"
+                    className="p-1 lg:p-2 text-2xl dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 rounded-md transition"
                     onClick={handleDarkMode}
                 >
                     {isDarkMode ? <FaMoon /> : <IoSunny />}
                 </button>
+                <button
+                    className="text-2xl md:hidden dark:text-white transition"
+                    onClick={toggleMenu}
+                >
+                    {isMenuOpen ? <FaTimes /> : <FaBars />}
+                </button>
             </div>
+            {isMenuOpen && (
+                <div className="absolute top-full left-0 md:hidden w-full h-svh bg-black/50">
+                    <ul
+                        ref={refContainerMenu}
+                        className="flex flex-col gap-2 p-4 bg-white dark:bg-dark-mode-black border-t shadow-md transition"
+                    >
+                        {initialNavbarOptions.map((option, i) => (
+                            <li
+                                key={i}
+                                className="px-3 py-2 text-base dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 rounded-md cursor-pointer transition"
+                            >
+                                <a href={option.url}>{option.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </nav>
     );
 }
