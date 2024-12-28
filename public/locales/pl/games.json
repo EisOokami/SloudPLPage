@@ -23,7 +23,7 @@
         },
         {
             "title": "Panel Hostingowy",
-            "descr": "CS2 opiera się na zespołowej rozgrywce akcji, którą seria zapoczątkowała ponad 20 lat temu. CS:GO oferuje nowe mapy, postacie, bronie i tryby gry oraz zaktualizowane wersje klasycznych treści CS i CS:GO.",
+            "descr": "Panel Hostingowy to narzędzie umożliwiające zarządzanie serwerem. Dzięki niemu możesz łatwo monitorować i konfigurować.",
             "imgUrl": "https://www.ukhost4u.com/wp-content/uploads/2023/05/Pros-and-Cons-of-Dedicated-Servers-for-Web-Hosting.webp",
             "btnText": "Panel Hostingowy",
             "btnUrl": "https://panel.sloudhost.ovh/"
