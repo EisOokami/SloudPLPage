@@ -4,6 +4,7 @@ const Navbar = lazy(() => import("./navbar/Navbar"));
 const Header = lazy(() => import("./header/Header"));
 const Info = lazy(() => import("./info/Info"));
 const Games = lazy(() => import("./games/Games"));
+const Footer = lazy(() => import("./footer/Footer"));
 
 export default function LandingPage() {
     return (
@@ -22,6 +23,9 @@ export default function LandingPage() {
                     <Games />
                 </Suspense>
             </main>
+            <Suspense>
+                <Footer />
+            </Suspense>
         </>
     );
 }
