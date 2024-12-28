@@ -1,0 +1,28 @@
+{
+    "options": [
+        {
+            "title": "Strona Główna",
+            "url": ""
+        },
+        {
+            "title": "Aplikacje",
+            "url": ""
+        },
+        {
+            "title": "Status",
+            "url": ""
+        },
+        {
+            "title": "Hosting",
+            "url": ""
+        },
+        {
+            "title": "Discord",
+            "url": ""
+        },
+        {
+            "title": "SloudClient",
+            "url": ""
+        }
+    ]
+}
