@@ -1,0 +1,32 @@
+{
+    "options": [
+        {
+            "title": "Minecraft",
+            "descr": "Minecraft to gra survivalowa z otwartym światem stworzona przez Markusa Perssona i rozwijana przez Mojang Studios. Minecraft pozwala graczom budować i niszczyć obiekty znajdujące się w losowo generowanym świecie gry. Gracz może atakować napotkane stworzenia, zbierać zasoby i tworzyć przedmioty.",
+            "imgUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png",
+            "btnText": "Strona Minecraft",
+            "btnUrl": "https://sloud.pl/mc/"
+        },
+        {
+            "title": "Rust",
+            "descr": "Jedynym celem w Rust jest przetrwanie. Wszystko chce, żebyś umarł: dzika przyroda wyspy i inni mieszkańcy, środowisko, inni ocaleni. Zrób wszystko, aby przetrwać kolejną noc.",
+            "imgUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1501/enihR6QwSYiWCNl2HdPfV6R6.png",
+            "btnText": "Dołącz",
+            "btnUrl": "steam://connect/node.sloud.pl:28017"
+        },
+        {
+            "title": "CS2",
+            "descr": "CS2 opiera się na zespołowej rozgrywce akcji, którą seria zapoczątkowała ponad 20 lat temu. CS:GO oferuje nowe mapy, postacie, bronie i tryby gry oraz zaktualizowane wersje klasycznych treści CS i CS:GO.",
+            "imgUrl": "https://ocdn.eu/sport-images-transforms/1/4X1k9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8yOGFhMGFhZDMzNmUyY2ZhOGFhOTVlMjM0NDE5YjI2Yy5qcGeTlQM1AM0EKM0CV5UCzQSwAMLDkwmmYmUwM2UzBt4AAqEwAaExAQ/counter-strike-2.jpg",
+            "btnText": "Lista naszych serwerów",
+            "btnUrl": "https://gosetti.pl/serwery?HostnameIpPort=SLOUD.PL"
+        },
+        {
+            "title": "Panel Hostingowy",
+            "descr": "CS2 opiera się na zespołowej rozgrywce akcji, którą seria zapoczątkowała ponad 20 lat temu. CS:GO oferuje nowe mapy, postacie, bronie i tryby gry oraz zaktualizowane wersje klasycznych treści CS i CS:GO.",
+            "imgUrl": "https://www.ukhost4u.com/wp-content/uploads/2023/05/Pros-and-Cons-of-Dedicated-Servers-for-Web-Hosting.webp",
+            "btnText": "Panel Hostingowy",
+            "btnUrl": "https://panel.sloudhost.ovh/"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "options": [
+        {
+            "title": "Minecraft",
+            "descr": "Minecraft is an open-world survival video game created by Markus Persson and developed by Mojang Studios. Minecraft allows players to build and destroy objects located in a randomly generated game world. The player can attack creatures they encounter, collect resources, and craft items.",
+            "imgUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png",
+            "btnText": "Minecraft Page",
+            "btnUrl": "https://sloud.pl/mc/"
+        },
+        {
+            "title": "Rust",
+            "descr": "The only goal in Rust is survival. Everything wants you to die: the island's wildlife and other inhabitants, the environment, other survivors. Do whatever it takes to survive another night.",
+            "imgUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202103/1501/enihR6QwSYiWCNl2HdPfV6R6.png",
+            "btnText": "Join",
+            "btnUrl": "steam://connect/node.sloud.pl:28017"
+        },
+        {
+            "title": "CS2",
+            "descr": "CS2 builds on the team-based action gameplay that the series pioneered when it launched over 20 years ago. CS:GO features new maps, characters, weapons, and game modes, and offers updated versions of classic CS and CS:GO content.",
+            "imgUrl": "https://ocdn.eu/sport-images-transforms/1/4X1k9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy8yOGFhMGFhZDMzNmUyY2ZhOGFhOTVlMjM0NDE5YjI2Yy5qcGeTlQM1AM0EKM0CV5UCzQSwAMLDkwmmYmUwM2UzBt4AAqEwAaExAQ/counter-strike-2.jpg",
+            "btnText": "List of our servers",
+            "btnUrl": "https://gosetti.pl/serwery?HostnameIpPort=SLOUD.PL"
+        },
+        {
+            "title": "Hosting Panel",
+            "descr": "CS2 builds on the team-based action gameplay that the series pioneered when it launched over 20 years ago. CS:GO features new maps, characters, weapons, and game modes, and offers updated versions of classic CS and CS:GO content.",
+            "imgUrl": "https://www.ukhost4u.com/wp-content/uploads/2023/05/Pros-and-Cons-of-Dedicated-Servers-for-Web-Hosting.webp",
+            "btnText": "Hosting Panel",
+            "btnUrl": "https://panel.sloudhost.ovh/"
+        }
+    ]
+}

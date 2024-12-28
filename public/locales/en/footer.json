@@ -1,0 +1,31 @@
+{
+    "contact": "Contact:",
+    "email": "E-Mail: main@sloud.pl",
+    "options": [
+        {
+            "title": "Home Page",
+            "url": ""
+        },
+        {
+            "title": "Applications",
+            "url": ""
+        },
+        {
+            "title": "Status",
+            "url": ""
+        },
+        {
+            "title": "Hosting",
+            "url": ""
+        },
+        {
+            "title": "Discord",
+            "url": ""
+        },
+        {
+            "title": "SloudClient",
+            "url": ""
+        }
+    ],
+    "copyright": "Copyright SLOUD.PL © 2024"
+}

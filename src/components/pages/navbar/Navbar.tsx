@@ -1,58 +1,85 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FaMoon, FaBars, FaTimes } from "react-icons/fa";
 import { IoSunny } from "react-icons/io5";
 import useClickOutside from "../../../hooks/UseClickOutside";
 
-const initialNavbarOptions = [
-    {
-        title: "Strona Główna",
-        url: "",
-    },
-    {
-        title: "Aplikacje",
-        url: "",
-    },
-    {
-        title: "Status",
-        url: "",
-    },
-    {
-        title: "Hosting",
-        url: "",
-    },
-    {
-        title: "Discord",
-        url: "",
-    },
-    {
-        title: "SloudClient",
-        url: "",
-    },
-];
+interface NavbarOption {
+    title: string;
+    url: string;
+}
 
 export default function Navbar() {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuLangOpen, setIsMenuLangOpen] = useState(false);
     const refContainerMenu = useRef(null);
+    const refContainerMenuLang = useRef(null);
+    const { t, i18n } = useTranslation(["navbar"]);
+
+    const initialNavbarOptions = t("options", {
+        returnObjects: true,
+    }) as NavbarOption[];
 
     useClickOutside(refContainerMenu, () => {
         setIsMenuOpen(false);
     });
 
+    useClickOutside(refContainerMenuLang, () => {
+        setIsMenuLangOpen(false);
+    });
+
     useEffect(() => {
-        if (isDarkMode) {
-            document.documentElement.classList.add("dark");
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme) {
+            const mode = savedTheme === "dark" ? "dark" : "light";
+
+            setIsDarkMode(savedTheme === "dark");
+            localStorage.setItem("theme", mode);
+            document.documentElement.classList.add(mode);
         } else {
-            document.documentElement.classList.remove("dark");
+            const prefersDark = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            ).matches;
+            const mode = prefersDark ? "dark" : "light";
+
+            setIsDarkMode(prefersDark);
+            localStorage.setItem("theme", mode);
+            document.documentElement.classList.add(mode);
         }
-    }, [isDarkMode]);
+    }, []);
+
+    useEffect(() => {
+        const savedLanguage = sessionStorage.getItem("language");
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+    }, [i18n]);
 
     const handleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
+
+        if (!isDarkMode) {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+        }
     };
 
-    const toggleMenu = () => {
+    const handleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleMenuLang = () => {
+        setIsMenuLangOpen(!isMenuLangOpen);
+    };
+
+    const changeLanguage = (lng: string) => {
+        i18n.changeLanguage(lng);
+        sessionStorage.setItem("language", lng);
     };
 
     return (
@@ -77,9 +104,42 @@ export default function Navbar() {
                 >
                     {isDarkMode ? <FaMoon /> : <IoSunny />}
                 </button>
+                <div className="relative">
+                    <button
+                        className="p-1 lg:p-2 text-base dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 rounded-md transition"
+                        onClick={handleMenuLang}
+                    >
+                        {i18n.language.toUpperCase()}
+                    </button>
+                    {isMenuLangOpen && (
+                        <ul
+                            ref={refContainerMenuLang}
+                            className="absolute right-0 w-32 bg-white dark:bg-dark-mode-black border rounded-md shadow-lg"
+                        >
+                            <li
+                                className="px-3 py-2 text-base dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 cursor-pointer transition"
+                                onClick={() => {
+                                    changeLanguage("pl");
+                                    setIsMenuLangOpen(false);
+                                }}
+                            >
+                                PL
+                            </li>
+                            <li
+                                className="px-3 py-2 text-base dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 cursor-pointer transition"
+                                onClick={() => {
+                                    changeLanguage("en");
+                                    setIsMenuLangOpen(false);
+                                }}
+                            >
+                                EN
+                            </li>
+                        </ul>
+                    )}
+                </div>
                 <button
                     className="text-2xl md:hidden dark:text-white transition"
-                    onClick={toggleMenu}
+                    onClick={handleMenu}
                 >
                     {isMenuOpen ? <FaTimes /> : <FaBars />}
                 </button>

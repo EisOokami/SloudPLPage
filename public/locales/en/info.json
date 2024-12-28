@@ -1,0 +1,22 @@
+{
+    "title": "Finally, a better way to gaming servers",
+    "descr": "Our main pillars to create the best gaming server experience.",
+    "options": [
+        {
+            "title": "Low Latency",
+            "descr": "Our servers are strategically located to ensure minimal ping for a seamless gaming experience."
+        },
+        {
+            "title": "Instant Setup",
+            "descr": "Get your gaming server up and running instantly with our automated setup process."
+        },
+        {
+            "title": "High Security",
+            "descr": "Our servers are protected with top-notch security measures to keep your data safe."
+        },
+        {
+            "title": "Scalable",
+            "descr": "Easily scale your server resources to handle increasing player counts and game demands."
+        }
+    ]
+}

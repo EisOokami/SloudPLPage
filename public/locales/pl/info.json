@@ -1,0 +1,22 @@
+{
+    "title": "Wreszcie lepszy sposób na serwery gier",
+    "descr": "Nasze główne filary tworzenia najlepszego doświadczenia serwera gier.",
+    "options": [
+        {
+            "title": "Niskie opóźnienie",
+            "descr": "Nasze serwery są strategicznie rozmieszczone, aby zapewnić minimalny ping dla płynnej rozgrywki."
+        },
+        {
+            "title": "Natychmiastowa konfiguracja",
+            "descr": "Uruchom swój serwer gier natychmiast dzięki naszemu zautomatyzowanemu procesowi konfiguracji."
+        },
+        {
+            "title": "Wysokie bezpieczeństwo",
+            "descr": "Nasze serwery są chronione najwyższej klasy środkami bezpieczeństwa, aby chronić Twoje dane."
+        },
+        {
+            "title": "Skalowalność",
+            "descr": "Łatwo skaluj zasoby serwera, aby sprostać rosnącej liczbie graczy i wymaganiom gry."
+        }
+    ]
+}
