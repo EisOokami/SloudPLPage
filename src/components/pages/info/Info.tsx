@@ -6,36 +6,37 @@ import { FaAngleDoubleUp } from "react-icons/fa";
 const initialPaymentsOptions = [
     {
         Icon: GoClockFill,
-        title: "Fast",
-        descr: "Automatically process transfers in real-time to maximize throughput efficiency.",
+        title: "Low Latency",
+        descr: "Our servers are strategically located to ensure minimal ping for a seamless gaming experience.",
     },
     {
         Icon: MdAutoFixHigh,
-        title: "Instant",
-        descr: "Fully automate the payment lifecycle without the need for custom coding.",
+        title: "Instant Setup",
+        descr: "Get your gaming server up and running instantly with our automated setup process.",
     },
     {
         Icon: IoShieldSharp,
-        title: "Secure",
-        descr: "Automatically process transfers in real-time to maximize throughput efficiency.",
+        title: "High Security",
+        descr: "Our servers are protected with top-notch security measures to keep your data safe.",
     },
     {
         Icon: FaAngleDoubleUp,
-        title: "Build for Scale",
-        descr: "Automatically process transfers in real-time to maximize throughput efficiency.",
+        title: "Scalable",
+        descr: "Easily scale your server resources to handle increasing player counts and game demands.",
     },
 ];
 
 export default function Info() {
     return (
-        <section className="flex justify-between p-10 bg-white dark:bg-dark-mode-black rounded-3xl transition">
+        <section className="info flex justify-between p-10 bg-white dark:bg-dark-mode-black rounded-3xl transition">
             <div>
                 <div className="dark:text-white transition">
                     <h2 className="text-4xl">
-                        Finally, a better way <br /> to simple payments
+                        Finally, a better way <br /> to gaming servers
                     </h2>
                     <p className="text-gray-500 dark:text-dark-mode-gray transition">
-                        Our main pillars to create the best fintech.
+                        Our main pillars to create the best gaming server
+                        experience.
                     </p>
                 </div>
             </div>

@@ -10,7 +10,7 @@ export default function LandingPage() {
             <Suspense>
                 <Navbar />
             </Suspense>
-            <main className="p-5 bg-gray-100 dark:bg-dark-mode-gray-2 transition">
+            <main className="grid gap-5 p-5 bg-gray-100 dark:bg-dark-mode-gray-2 transition">
                 <Suspense>
                     <Header />
                 </Suspense>
