@@ -1,31 +1,28 @@
 {
-    "contact": "Kontakt:",
-    "email": "E-Mail: main@sloud.pl",
     "options": [
         {
             "title": "Strona Główna",
-            "url": ""
+            "url": "#"
         },
         {
             "title": "Aplikacje",
-            "url": ""
+            "url": "https://apps.sloudhost.ovh/"
         },
         {
             "title": "Status",
-            "url": ""
+            "url": "https://status.sloud.pl/"
         },
         {
             "title": "Hosting",
-            "url": ""
+            "url": "https://panel.sloudhost.ovh/"
         },
         {
             "title": "Discord",
-            "url": ""
+            "url": "https://sloud.pl/discord/"
         },
         {
             "title": "SloudClient",
-            "url": ""
+            "url": "https://sloud.pl/mc/client/"
         }
-    ],
-    "copyright": "Copyright SLOUD.PL © 2024"
+    ]
 }

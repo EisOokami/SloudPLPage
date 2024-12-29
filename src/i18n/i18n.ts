@@ -2,16 +2,16 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import navbarEn from "../../public/locales/en/navbar.json";
-import navbarPl from "../../public/locales/pl/navbar.json";
-import headerEn from "../../public/locales/en/header.json";
-import headerPl from "../../public/locales/pl/header.json";
-import infoEn from "../../public/locales/en/info.json";
-import infoPl from "../../public/locales/pl/info.json";
-import gamesEn from "../../public/locales/en/games.json";
-import gamesPl from "../../public/locales/pl/games.json";
-import footerEn from "../../public/locales/en/footer.json";
-import footerPl from "../../public/locales/pl/footer.json";
+import navbarEn from "../locales/en/navbar.json";
+import navbarPl from "../locales/pl/navbar.json";
+import headerEn from "../locales/en/header.json";
+import headerPl from "../locales/pl/header.json";
+import infoEn from "../locales/en/info.json";
+import infoPl from "../locales/pl/info.json";
+import gamesEn from "../locales/en/games.json";
+import gamesPl from "../locales/pl/games.json";
+import footerEn from "../locales/en/footer.json";
+import footerPl from "../locales/pl/footer.json";
 
 const resources = {
     en: {
