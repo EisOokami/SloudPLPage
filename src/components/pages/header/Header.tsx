@@ -1,16 +1,17 @@
+import { useCallback } from "react";
 import { useTranslation } from "react-i18next";
 // import { AiOutlinePicture } from "react-icons/ai";
 
 export default function Header() {
     const { t } = useTranslation(["header"]);
 
-    const handleSendFooter = () => {
+    const handleSendFooter = useCallback(() => {
         window.scrollTo({
             top: 9999,
             left: 0,
             behavior: "smooth",
         });
-    };
+    }, []);
 
     return (
         <header className="header grid md:flex gap-5">

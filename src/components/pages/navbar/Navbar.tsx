@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaMoon, FaBars, FaTimes } from "react-icons/fa";
 import { IoSunny } from "react-icons/io5";
@@ -57,7 +57,7 @@ export default function Navbar() {
         }
     }, [i18n]);
 
-    const handleDarkMode = () => {
+    const handleDarkMode = useCallback(() => {
         setIsDarkMode(!isDarkMode);
 
         if (!isDarkMode) {
@@ -67,20 +67,31 @@ export default function Navbar() {
             document.documentElement.classList.remove("dark");
             localStorage.setItem("theme", "light");
         }
-    };
+    }, [isDarkMode]);
 
-    const handleMenu = () => {
+    const handleMenu = useCallback(() => {
         setIsMenuOpen(!isMenuOpen);
-    };
+    }, [isMenuOpen]);
 
-    const handleMenuLang = () => {
+    const handleMenuLang = useCallback(() => {
         setIsMenuLangOpen(!isMenuLangOpen);
-    };
+    }, [isMenuLangOpen]);
 
-    const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng);
-        sessionStorage.setItem("language", lng);
-    };
+    const changeLanguage = useCallback(
+        (lng: string) => {
+            i18n.changeLanguage(lng);
+            sessionStorage.setItem("language", lng);
+        },
+        [i18n],
+    );
+
+    const handleChangeLanguage = useCallback(
+        (land: string) => {
+            changeLanguage(land);
+            setIsMenuLangOpen(false);
+        },
+        [changeLanguage],
+    );
 
     return (
         <nav className="navbar sticky top-0 left-0 right-0 flex items-center justify-between px-5 sm:px-10 lg:px-24 py-3 md:py-4 bg-white dark:bg-dark-mode-black border-b dark:border-dark-mode-gray transition z-50">
@@ -119,8 +130,7 @@ export default function Navbar() {
                             <li
                                 className="px-3 py-2 text-base dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 cursor-pointer transition"
                                 onClick={() => {
-                                    changeLanguage("pl");
-                                    setIsMenuLangOpen(false);
+                                    handleChangeLanguage("pl");
                                 }}
                             >
                                 PL
@@ -128,8 +138,7 @@ export default function Navbar() {
                             <li
                                 className="px-3 py-2 text-base dark:text-white hover:bg-gray-100 dark:hover:bg-dark-mode-gray-2 cursor-pointer transition"
                                 onClick={() => {
-                                    changeLanguage("en");
-                                    setIsMenuLangOpen(false);
+                                    handleChangeLanguage("en");
                                 }}
                             >
                                 EN
