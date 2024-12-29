@@ -2,27 +2,27 @@
     "options": [
         {
             "title": "Home Page",
-            "url": ""
+            "url": "#"
         },
         {
             "title": "Applications",
-            "url": ""
+            "url": "https://apps.sloudhost.ovh/"
         },
         {
             "title": "Status",
-            "url": ""
+            "url": "https://status.sloud.pl/"
         },
         {
             "title": "Hosting",
-            "url": ""
+            "url": "https://panel.sloudhost.ovh/"
         },
         {
             "title": "Discord",
-            "url": ""
+            "url": "https://sloud.pl/discord/"
         },
         {
             "title": "SloudClient",
-            "url": ""
+            "url": "https://sloud.pl/mc/client/"
         }
     ]
 }

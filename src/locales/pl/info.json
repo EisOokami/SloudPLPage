@@ -7,8 +7,8 @@
             "descr": "Nasze serwery są strategicznie rozmieszczone, aby zapewnić minimalny ping dla płynnej rozgrywki."
         },
         {
-            "title": "Natychmiastowa konfiguracja",
-            "descr": "Uruchom swój serwer gier natychmiast dzięki naszemu zautomatyzowanemu procesowi konfiguracji."
+            "title": "Od graczy dla graczy",
+            "descr": "Serwery zostały stworzone przez graczy dla graczy!"
         },
         {
             "title": "Wysokie bezpieczeństwo",
@@ -16,7 +16,7 @@
         },
         {
             "title": "Skalowalność",
-            "descr": "Łatwo skaluj zasoby serwera, aby sprostać rosnącej liczbie graczy i wymaganiom gry."
+            "descr": "Łatwo możemy skalować zasoby serwerów, aby sprostać rosnącej liczbie graczy i wymaganiom gry."
         }
     ]
 }

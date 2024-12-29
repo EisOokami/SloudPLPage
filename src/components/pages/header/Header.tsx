@@ -33,7 +33,7 @@ export default function Header() {
             <div className="grid place-items-center md:w-1/2 h-80 md:h-96 bg-gray-400 rounded-3xl">
                 {/* <AiOutlinePicture className="text-6xl text-white dark:text-black transition" /> */}
                 <img
-                    src="https://cdn.discordapp.com/attachments/1220438796026384464/1322649083805958205/servers.jpg?ex=6771a473&is=677052f3&hm=ba31575de7743662bebfb126d707fa026f5e1eaf6c5d1dca973cb8af781c5d79&"
+                    src="https://node1.sloudhost.ovh/sloudpl/servers.jpg"
                     alt="hosting"
                     className="object-fill w-full h-80 md:h-96 rounded-3xl"
                 />
