@@ -1,6 +1,6 @@
 # SloudPLPage
 
-Welcome to the **SloudPLPage** project! This site is made for [SloudPL](https://sloud.pl/). It offers game server hosting and other services.
+Welcome to the **SloudPLPage** project! This site is made for [SloudPL](https://sloudhost.ovh/). It offers game server hosting and other services.
 
 ## Table of Contents
 
