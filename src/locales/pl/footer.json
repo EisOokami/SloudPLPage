@@ -1,6 +1,6 @@
 {
     "contact": "Kontakt:",
-    "email": "E-Mail: main@sloud.pl",
+    "email": "E-Mail: main@sloudhost.ovh",
     "options": [
         {
             "title": "Strona Główna",
@@ -27,5 +27,5 @@
             "url": "https://sloud.pl/mc/client/"
         }
     ],
-    "copyright": "Copyright SLOUD.PL © 2024"
+    "copyright": "Copyright SLOUDHOST.OVH © 2024"
 }
