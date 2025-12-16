@@ -26,7 +26,7 @@ To get a local copy up and running, follow these simple steps:
 ### Clone the repository
 
 ```sh
-git clone https://github.com/LakioLive/SloudPLPage
+git clone https://github.com/EisOokami/SloudPLPage
 cd SloudPLPage
 ```
 
@@ -74,3 +74,4 @@ SloudPL
 ## License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
+
