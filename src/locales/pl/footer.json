@@ -1,6 +1,6 @@
 {
     "contact": "Kontakt:",
-    "email": "E-Mail: main@sloudhost.ovh",
+    "email": "E-Mail: pomoc@sloudhost.ovh",
     "options": [
         {
             "title": "Strona Główna",
@@ -12,7 +12,7 @@
         },
         {
             "title": "Status",
-            "url": "https://status.sloud.pl/"
+            "url": "https://status.sloudhost.ovh/"
         },
         {
             "title": "Hosting",
@@ -20,11 +20,11 @@
         },
         {
             "title": "Discord",
-            "url": "https://sloud.pl/discord/"
+            "url": "https://sloudhost.ovh/discord/"
         },
         {
             "title": "SloudClient",
-            "url": "https://sloud.pl/mc/client/"
+            "url": "https://sloudhost.ovh/mc/client/"
         }
     ],
     "copyright": "Copyright SLOUDHOST.OVH © 2024"

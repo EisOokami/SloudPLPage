@@ -99,11 +99,11 @@ export default function Navbar() {
     );
 
     return (
-        <nav className="navbar sticky top-0 left-0 right-0 flex items-center justify-between px-5 sm:px-10 lg:px-24 py-3 md:py-4 bg-white dark:bg-dark-mode-black border-b dark:border-dark-mode-gray transition z-50">
+        <nav className="navbar sticky top-0 left-0 right-0 flex justify-between items-center px-5 sm:px-10 lg:px-24 py-3 md:py-4 bg-white dark:bg-dark-mode-black border-b dark:border-dark-mode-gray transition z-50">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold dark:text-white transition">
-                SloudPL
+                SloudHost
             </h3>
-            <ul className="hidden md:flex justify-center items-center gap-1 lg:gap-4 w-full">
+            <ul className="hidden md:flex items-center gap-1 lg:gap-4">
                 {initialNavbarOptions.map((option, i) => (
                     <li
                         key={i}

@@ -5,28 +5,28 @@
             "descr": "Minecraft to gra survivalowa z otwartym światem stworzona przez Markusa Perssona i rozwijana przez Mojang Studios. Minecraft pozwala graczom budować i niszczyć obiekty znajdujące się w losowo generowanym świecie gry. Gracz może atakować napotkane stworzenia, zbierać zasoby i tworzyć przedmioty.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/minecraft.jpg",
             "btnText": "Strona Minecraft",
-            "btnUrl": "https://sloud.pl/mc/"
+            "btnUrl": ""
         },
         {
             "title": "Rust",
             "descr": "Jedynym celem w Rust jest przetrwanie. Wszystko chce, żebyś umarł: dzika przyroda wyspy i inni mieszkańcy, środowisko, inni ocaleni. Zrób wszystko, aby przetrwać kolejną noc.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/rust.jpg",
             "btnText": "Dołącz",
-            "btnUrl": "steam://connect/node.sloudhost.ovh:28017"
+            "btnUrl": ""
         },
         {
             "title": "CS2",
             "descr": "CS2 opiera się na zespołowej rozgrywce akcji, którą seria zapoczątkowała ponad 20 lat temu. CS:GO oferuje nowe mapy, postacie, bronie i tryby gry oraz zaktualizowane wersje klasycznych treści CS i CS:GO.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/cs2.jpg",
             "btnText": "Lista naszych serwerów",
-            "btnUrl": "https://gosetti.pl/serwery?HostnameIpPort=SLOUD.PL"
+            "btnUrl": ""
         },
         {
             "title": "Panel Hostingowy",
             "descr": "Panel Hostingowy to narzędzie umożliwiające zarządzanie serwerem. Dzięki niemu możesz łatwo monitorować i konfigurować.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/servers.jpg",
             "btnText": "Panel Hostingowy",
-            "btnUrl": "https://panel.sloudhost.ovh/"
+            "btnUrl": ""
         }
     ]
 }
