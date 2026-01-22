@@ -5,28 +5,28 @@
             "descr": "Minecraft is an open-world survival video game created by Markus Persson and developed by Mojang Studios. Minecraft allows players to build and destroy objects located in a randomly generated game world. The player can attack creatures they encounter, collect resources, and craft items.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/minecraft.jpg",
             "btnText": "Minecraft Page",
-            "btnUrl": "https://sloud.pl/mc/"
+            "btnUrl": ""
         },
         {
             "title": "Rust",
             "descr": "The only goal in Rust is survival. Everything wants you to die: the island's wildlife and other inhabitants, the environment, other survivors. Do whatever it takes to survive another night.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/rust.jpg",
             "btnText": "Join",
-            "btnUrl": "steam://connect/node.sloud.pl:28017"
+            "btnUrl": ""
         },
         {
             "title": "CS2",
             "descr": "CS2 builds on the team-based action gameplay that the series pioneered when it launched over 20 years ago. CS:GO features new maps, characters, weapons, and game modes, and offers updated versions of classic CS and CS:GO content.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/cs2.jpg",
             "btnText": "List of our servers",
-            "btnUrl": "https://gosetti.pl/serwery?HostnameIpPort=SLOUD.PL"
+            "btnUrl": ""
         },
         {
             "title": "Hosting Panel",
             "descr": "Hosting Panel is a tool that allows you to manage your server. With it, you can easily monitor and configure.",
             "imgUrl": "https://node1.sloudhost.ovh/sloudpl/servers.jpg",
             "btnText": "Hosting Panel",
-            "btnUrl": "https://panel.sloudhost.ovh/"
+            "btnUrl": ""
         }
     ]
 }
