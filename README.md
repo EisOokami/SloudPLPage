@@ -4,16 +4,11 @@ Welcome to the **SloudPLPage** project! This site is made for [SloudPL](https://
 
 ## Table of Contents
 
--   [Demo](#demo)
 -   [Installation](#installation)
 -   [Technologies](#technologies)
 -   [Contributing](#contributing)
 -   [Authors](#authors)
 -   [License](#license)
-
-## Demo
-
-Check out the live demo [here](https://sloud.pl/).
 
 ## Installation
 
@@ -74,4 +69,5 @@ SloudPL
 ## License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
+
 
